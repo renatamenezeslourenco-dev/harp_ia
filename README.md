@@ -4,6 +4,22 @@ Plataforma para acompanhar a Câmara dos Deputados e as eleições de 2026: depu
 
 Este README é o guia das funções por página: o que cada parte do código faz e por quê. Atualizado em 13/10/2026.
 
+## Minha contribuição — Renata Lourenço
+
+Fui responsável pelo desenvolvimento do chat e da assistente de inteligência artificial Harpia, desde a estrutura das conversas até a integração com os dados reais da plataforma.
+
+### Principais entregas
+
+- Chat principal e widget integrado às páginas, com histórico de conversas e busca.
+- Integração com modelos de linguagem e ferramentas de consulta aos dados de partidos, deputados e votações.
+- Sugestões de perguntas conforme a página e aprofundamento das respostas com acesso a rankings, comparações e funcionalidades existentes.
+- Respostas em streaming, indicadores de carregamento, tratamento de erros e bloqueio de envios duplicados.
+- Melhorias de interface, navegação e consistência entre o widget e o chat principal.
+
+**Tecnologias utilizadas:** Ruby on Rails, PostgreSQL, RubyLLM, JavaScript, Stimulus e Turbo.
+
+Projeto desenvolvido em equipe. Este fork apresenta o trabalho coletivo e destaca minha contribuição na experiência conversacional e na integração com IA.
+
 ## Visão geral
 
 Toda página do Harp IA segue o mesmo caminho: a rota escolhe o controller, o controller busca os dados (às vezes com ajuda de um service ou query) e a view desenha o HTML com helpers e partials. Este guia explica cada função nessa ordem. Para o histórico de como o código foi construído, veja `docs/PASSO_A_PASSO.md`.
